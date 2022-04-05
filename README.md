@@ -7,8 +7,8 @@ Ejemplo:
 3) Hacemos: `rename_factura.sh factura_n117054.pdf`
 4) Ahora nuestro archivo se llama 29-03-22_JohnDoe.pdf
 
-*Podemos agregar un comentario que se añadirá al final del nombre del archivo.
-Ejemplo:
+Adicionalmente podemos agregar un comentario que se añadirá al final del nombre del archivo.
+Siguiendo el mismo ejemplo el resultado seria:
+
 29-03-22_JohnDoe_comentario sobre esta factura.pdf
 
-etc
