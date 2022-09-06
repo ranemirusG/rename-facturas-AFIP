@@ -1,6 +1,8 @@
 # rename-facturas-AFIP
 Shell script para renomobrar facturas y notas de crédito emitidas con el formato clásico de AFIP.
 
+Requerimientos: Ghostscript (https://www.ghostscript.com)
+
 Ejemplo:
 1) John Doe nos envia una factura emitida por él el día 29/03/22
 2) El nombre del archivo es "factura000117054.pdf"
