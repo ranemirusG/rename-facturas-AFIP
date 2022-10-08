@@ -1,5 +1,5 @@
 # rename-facturas-AFIP
-Shell script para renomobrar facturas y notas de crédito emitidas con el formato clásico de AFIP (Argentina).
+Shell script para renombrar facturas (A,B,C) y notas de crédito emitidas con el formato clásico de AFIP (Argentina).
 Usando este script la factura tendrá como nombre:
 [fecha]\_[emisor]\_[_comentario opcional_].pdf
 
