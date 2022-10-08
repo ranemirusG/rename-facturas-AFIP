@@ -2,10 +2,9 @@
 ps2ascii $1 > /tmp/factura.txt;
 
 echo 'Ingresar comment o Enter para continuar: '
-read comment;
-head=$(head -5 /tmp/factura.txt)
-nombreEmisor=$(echo $head | sed -En 's/.*Social: ([A-Za-z].*[A-Za-z])  *Fecha.*/\1/p')
-fecha=$(echo $head | sed -En 's/.*([0-9][0-9]).([0-9][0-9]).[0-9][0-9]([0-9][0-9]).*/\1-\2-\3/p')
+read comment
+nombreEmisor=$(sed -En 's/.*Social: ([A-Za-z].*[A-Za-z])  *Fecha.*/\1/p' /tmp/factura.txt | sed -n '1p')
+fecha=$(sed -En 's/.*Fecha de Emisi.n.*([0-9][0-9]).([0-9][0-9]).[0-9][0-9]([0-9][0-9]).*/\1-\2-\3/p' /tmp/factura.txt | sed -n '1p')
 newNameNoComment=$(echo $fecha\_$nombreEmisor)
 newNameWithComment=$(echo $fecha\_$nombreEmisor\_$comment)
 destino=$(echo ~/directorio/destino/) # elegir directorio destino
@@ -17,3 +16,4 @@ else
 fi
 
 rm /tmp/factura.txt;
+
