@@ -1,16 +1,19 @@
 # rename-facturas-AFIP
-Shell script para renomobrar facturas y notas de crédito emitidas con el formato clásico de AFIP.
+Shell script para renomobrar facturas y notas de crédito emitidas con el formato clásico de AFIP (Argentina).
+Usando este script la factura tendrá como nombre:
+[fecha]\_[emisor]\_[_comentario (opcional)_].pdf
 
-Requerimientos: Ghostscript (https://www.ghostscript.com)
+Para convertir de pdf a texto uso el comando ps2ascii de Ghostscript (https://www.ghostscript.com)
 
 Ejemplo:
-1) John Doe nos envia una factura emitida por él el día 29/03/22
-2) El nombre del archivo es "factura000117054.pdf"
-3) Hacemos: `rename_factura.sh factura000117054.pdf`
-4) Ahora nuestro archivo se llama 29-03-22_JohnDoe.pdf
+1) Carlos Gutierrez nos envia una factura emitida por él el día 29/03/22
+2) El nombre del archivo es "factura123456789.pdf"
+3) En la terminal usamos el script `rename_factura_afip.sh factura123456789.pdf`
+4) Ahora nuestro archivo se llama 29-03-22_Carlos Gutierrez.pdf y es mucho más
+fácil identificarlo, reenviarlo, etc.
 
 Adicionalmente podemos agregar un comentario que se añadirá al final del nombre del archivo.
-Siguiendo el mismo ejemplo el resultado seria:
+Continuando con el ejemplo:
 
-29-03-22_JohnDoe_comentario sobre esta factura.pdf
+29-03-22_Carlos Gutierrez_no pagar.pdf
 
