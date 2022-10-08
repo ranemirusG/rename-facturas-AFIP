@@ -11,9 +11,9 @@ newNameWithComment=$(echo $fecha\_$nombreEmisor\_$comment)
 destino=$(echo ~/directorio/destino/) # elegir directorio destino
 
 if [ -z $comment ]; then
-	mv $1 $destino${newNameNoComment}.pdf;
+	mv $1 ${destino}${newNameNoComment}.pdf;
 else
-	mv $1 $destino${newNameWithComment}.pdf;
+	mv $1 ${destino}${newNameWithComment}.pdf;
 fi
 
 rm /tmp/factura.txt;
