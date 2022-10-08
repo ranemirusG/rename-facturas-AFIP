@@ -3,7 +3,7 @@ Shell script para renomobrar facturas y notas de crédito emitidas con el format
 Usando este script la factura tendrá como nombre:
 [fecha]\_[emisor]\_[_comentario opcional_].pdf
 
-Para convertir de pdf a texto uso el comando ps2ascii de [Ghostscript][https://www.ghostscript.com]
+Para convertir de pdf a texto uso el comando ps2ascii de [Ghostscript](https://www.ghostscript.com)
 
 Ejemplo:
 1) Carlos Gutierrez nos envia una factura emitida por él el día 29/03/22
